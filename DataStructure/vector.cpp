@@ -1,15 +1,23 @@
 #include <iostream>
 #include <vector>
-using namespace std;
+using namespace std ;
+//vector are same as array but we can add dynamic element in vector 
+//in array we can not add element once the array is declear
 
 int main(){
-    vector<string> names={"pranay","ram","ganesh","sudhakar","yash"};
+    
+   vector <string> names={"pranay","ram","ganesh","sudhakar","yash"};
+
     //for  accesing all the value of vector  
-    for (int i = 0; i < names.size(); i++)
+    for (int i = 0; i < names.size(); i++) // .size() is used for getting size of vector
      {
         cout << names.at(i) << endl ;
         
      }
+
+
+     //for cheking if vector is empty or not 
+      cout << names.empty() << endl; //if yes retrun 1 else 0 .     
 
      //for changing any value inside in vector
      
@@ -22,7 +30,7 @@ int main(){
 
      cout << names[0] << endl ; //for first position 
      //or 
-     cout << names.at(0) << endl ; //work the same ('at')  onject come with STL library
+     cout << names.at(0) << endl ; //work the same and the 'at' onject come with STL library
      
      //for accesing fist and last element of vector
 
@@ -39,10 +47,7 @@ int main(){
      
      //for deleteing from back 
      names.pop_back();
-     cout << "after removing the name from back the last name is : " << names.back() << endl ;
-     
-
-     
+     cout << "after removing the name from back the last name is : " << names.back() << endl ; 
 
 
 
